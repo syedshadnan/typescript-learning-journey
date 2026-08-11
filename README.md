@@ -55,6 +55,7 @@ typescript-learning-journey/
 │   ├── DAY_00_SETUP.md
 │   ├── DAY_01.md
 │   └── ...
+```
 
 ---
 
