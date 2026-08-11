@@ -22,7 +22,7 @@ Topics:
 - Running TypeScript files with the compiler
 - Reviewing JavaScript basics that matter in TypeScript
 
-Status: ⏳ Not Started
+Status: ✅ Completed
 
 ---
 

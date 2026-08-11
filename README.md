@@ -20,9 +20,9 @@ JavaScript
 
 ## Current Status
 
-Current Phase: Phase 0 — Setup and Foundations
+Current Phase: Phase 1 — TypeScript Fundamentals
 
-Status: 🚧 Getting Started
+Status: 🚀 Ready to Start Day 1
 
 ---
 
@@ -45,11 +45,16 @@ See ROADMAP.md for details.
 ## Repository Structure
 
 ```text
-README.md
-ROADMAP.md
-MENTOR_INSTRUCTIONS.md
-LEARNING_LOG.md
-```
+typescript-learning-journey/
+│
+├── README.md
+├── ROADMAP.md
+├── MENTOR_INSTRUCTIONS.md
+│
+├── learning-logs/
+│   ├── DAY_00_SETUP.md
+│   ├── DAY_01.md
+│   └── ...
 
 ---
 
