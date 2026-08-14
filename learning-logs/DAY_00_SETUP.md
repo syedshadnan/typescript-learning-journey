@@ -14,6 +14,7 @@
 * Installed TypeScript globally
 * Fixed PowerShell execution policy issues
 * Upgraded Node.js from v18.12.1 to v24.19.0
+* TypeScript upgraded from 5.9.3 to 7.0.2 after upgrading Node.js to v24.19.0
 * Verified npm installation
 * Verified TypeScript compiler installation
 
