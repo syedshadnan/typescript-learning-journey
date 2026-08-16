@@ -2,8 +2,8 @@
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
 ![Phase](https://img.shields.io/badge/Phase-1%20Fundamentals-success)
-![Day](https://img.shields.io/badge/Completed-Day%203-brightgreen)
-![Learning%20In%20Public](https://img.shields.io/badge/Learning-In%20Public-purple)
+![Day](https://img.shields.io/badge/Completed-Day%204-brightgreen)
+![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
 
 Learning TypeScript in public.
 
@@ -28,11 +28,13 @@ JavaScript
 Current Phase: Phase 1 — TypeScript Fundamentals
 
 Progress:
-- ✅ Day 0 — Setup & Environment
-- ✅ Day 1 — What TypeScript Is & Why It Exists
-- ✅ Day 2 — Primitive Types
-- ✅ Day 3 — Arrays, Tuples & Object Types
-- 🚀 Next: Day 4 — Functions & Parameters
+
+* ✅ Day 0 — Setup & Environment
+* ✅ Day 1 — What TypeScript Is & Why It Exists
+* ✅ Day 2 — Primitive Types
+* ✅ Day 3 — Arrays, Tuples & Object Types
+* ✅ Day 4 — Functions & Parameters
+* 🚀 Next: Day 5 — Union Types
 
 ---
 
@@ -66,6 +68,7 @@ typescript-learning-journey/
 │   ├── DAY_01.md
 │   ├── DAY_02.md
 │   ├── DAY_03.md
+│   ├── DAY_04.md
 │   └── ...
 ```
 
@@ -74,22 +77,40 @@ typescript-learning-journey/
 ## Topics Covered So Far
 
 ### Day 1
-- What TypeScript is
-- Why TypeScript exists
-- Static vs Dynamic Typing
-- TypeScript Compilation Process
+
+* What TypeScript is
+* Why TypeScript exists
+* Static vs Dynamic Typing
+* TypeScript Compilation Process
 
 ### Day 2
-- Primitive Types
-- Type Inference
-- Type Annotations
-- Type Safety
+
+* Primitive Types
+* Type Inference
+* Type Annotations
+* Type Safety
+* `null` vs `undefined`
 
 ### Day 3
-- Arrays
-- Array Type Inference
-- Tuples
-- Object Types
+
+* Arrays
+* Array Type Inference
+* Tuples
+* Object Types
+* Type Safety with Collections
+
+### Day 4
+
+* Functions in TypeScript
+* Parameter Type Annotations
+* Return Type Annotations
+* Return Type Inference
+* Optional Parameters
+* Default Parameters
+* `undefined` with Optional Parameters
+* Function Contracts
+* Compile-time vs Runtime Errors
+* Arrow Functions with TypeScript
 
 ---
 
@@ -98,10 +119,20 @@ typescript-learning-journey/
 Learning logs, revision notes, mistakes, interview questions, and milestones are documented throughout the journey.
 
 Current Streak:
-- ✅ Day 0
-- ✅ Day 1
-- ✅ Day 2
-- ✅ Day 3
+
+* ✅ Day 0
+* ✅ Day 1
+* ✅ Day 2
+* ✅ Day 3
+* ✅ Day 4
+
+Current Confidence:
+
+* Day 0 — 8/10
+* Day 1 — Strong understanding
+* Day 2 — 9/10
+* Day 3 — 8.8/10
+* Day 4 — 9/10
 
 ---
 
