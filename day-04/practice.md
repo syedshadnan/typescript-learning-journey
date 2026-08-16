@@ -1,185 +1,310 @@
-// Day 4 — Functions & Parameters
+# Day 4 — Functions & Parameters
 
-// 1. Why TypeScript cares about functions
+## 1. Why TypeScript Cares About Functions
 
-// In JavaScript, we can write:
-// function add(a, b){
-//     return a + b;
-// }
+In JavaScript, we can write:
 
-// The problem is that nothing tells us what a and b should be.
-
-// Someone could accidentally do:
-// add(10, '20');
-// JavaScript won't necessarily stop it
-
-
-// TypeScript lets us define the contract of a function:
-
-
-// "This function below expects two numbers and returns a number."
-
-function multiply(a: number, b: number):number{
+```js
+function add(a, b) {
     return a + b;
 }
+```
 
-now:
-multiply(10, 20)         // ✅
-// multiply(10, '20')    // ❌
-// That's one of the biggest practical benefits of TypeScript.
+The problem is that nothing tells us what `a` and `b` should be.
 
+Someone could accidentally do:
 
+```js
+add(10, '20');
+```
 
-// 2. Parameter Types:
-// the syntax is: 
-// function functionName(parameter: type){
+JavaScript won't necessarily stop it.
 
-// }
+### TypeScript lets us define the contract of a function:
 
-function greet(name: string){
+> "This function below expects two numbers and returns a number."
+
+```ts
+function multiply(a: number, b: number): number {
+    return a + b;
+}
+```
+
+Now:
+
+```ts
+multiply(10, 20);        // ✅
+// multiply(10, '20');  // ❌
+```
+
+That's one of the biggest practical benefits of TypeScript.
+
+---
+
+## 2. Parameter Types
+
+The syntax is:
+
+```ts
+function functionName(parameter: type) {
+
+}
+```
+
+Example:
+
+```ts
+function greet(name: string) {
     console.log(`hello${name}`);
 }
-//here (name: string) means the parameter must receive a string.
+```
 
+Here `(name: string)` means the parameter must receive a string.
+
+```ts
 greet("Ifty");     // ✅
 // greet(25);      // ❌
+```
 
-// Multiple parameters:
-function calculateTotal(price: number, quantity:number){
-    return price * quantity
+### Multiple Parameters
+
+```ts
+function calculateTotal(price: number, quantity: number) {
+    return price * quantity;
 }
-// Both parameters have their own types.
+```
 
-// 3. Return Types:
-// This is particularly important.
-// We can explicitly tell TypeScript what a function must return:
+Both parameters have their own types.
 
-function test(a: number, b: number): number{
+---
+
+## 3. Return Types
+
+This is particularly important.
+
+We can explicitly tell TypeScript what a function must return:
+
+```ts
+function test(a: number, b: number): number {
     return a + b;
 }
-// The second number is the return type.
-/*
+```
+
+The second `number` is the return type.
+
+```text
 parameter → what goes IN
 return type → what comes OUT
-*/
+```
 
-// example:
+### Example
 
+```ts
 function getUserName(): string {
-    return 'Ifty'
+    return 'Ifty';
 }
-// this is valid
-// but
-// function getUserName():string{
-//     return 25   ❌ Error.
+```
+
+This is valid.
+
+But:
+
+```ts
+// function getUserName(): string {
+//     return 25;   ❌ Error.
 // }
+```
 
-// The function promised to return a string, but returned a number.
+The function promised to return a string, but returned a number.
 
-// 4. Do we always need to write return types?
-// No. TypeScript can often infer them
+---
 
-function test2(a: number, b: number){
+## 4. Do We Always Need to Write Return Types?
+
+No. TypeScript can often infer them.
+
+```ts
+function test2(a: number, b: number) {
     return a + b;
 }
-// here typescript understand return type → number
-// so both can work
+```
 
+Here TypeScript understands the return type → `number`.
 
-/*
-Practical rule
+So both can work.
+
+### Practical Rule
 
 For simple function, inference is often perfectly fine.
 
 For important/public APIs or complex functions, explicitly declaring the return type can make the intended contract clearer.
 
-*/
+---
 
-// 5. Optional Parameters
-// sometimes a function parameter isn't require
+## 5. Optional Parameters
 
-// javascript:
-// function greet(name, age){
+Sometimes a function parameter isn't require.
 
-// }
+### JavaScript
 
-// typescript:
-function greeting(name:string, age?: number){
+```js
+function greet(name, age) {
+
+}
+```
+
+### TypeScript
+
+```ts
+function greeting(name: string, age?: number) {
     console.log(name, age);
 }
+```
 
-// this ? means the parameter is optional
+This `?` means the parameter is optional.
 
-// so both are valid:
+So both are valid:
+
+```ts
 greeting("Ifty");
 greeting("Ifty", 25);
+```
 
-// But >> greeting('ifty', '25')   ❌ Error
+But:
 
+```ts
+// greeting('ifty', '25')   ❌ Error
+```
 
-// Important concept
-// An optional parameter effectively means the value may be absent.
+### Important Concept
 
-// conceptually:
-// age?: number is related to:
-// age: number | undefined
-// so i have to be aware of age might not exist
-// This is a very important idea that will become useful later when we study type narrowing.
+An optional parameter effectively means the value may be absent.
 
+Conceptually:
 
-// 6. Default Parameters
-// JavaScript already supports default parameters:
+```ts
+age?: number
+```
+
+is related to:
+
+```ts
+age: number | undefined
+```
+
+So I have to be aware that `age` might not exist.
+
+This is a very important idea that will become useful later when we study type narrowing.
+
+---
+
+## 6. Default Parameters
+
+JavaScript already supports default parameters:
+
+```ts
 function greet2(name: string = "Guest") {
-  console.log(`Hello ${name}`);
+    console.log(`Hello ${name}`);
 }
+```
 
+---
 
-// 7. Optional vs Default Parameter
-// optional ==> the argument can be omitted, and the value becomes undefined
+## 7. Optional vs Default Parameter
 
-// Default ==> the argument can be omitted, but the function uses a default parameter set by the developer. 
-// Optional → maybe undefined
-// Default  → fallback value
+**Optional** → the argument can be omitted, and the value becomes `undefined`.
 
-// 8. Parameter Order Matters
-// this is valid
-function greet3 (name: string, age?: number) {
+**Default** → the argument can be omitted, but the function uses a default parameter set by the developer.
+
+```text
+Optional → maybe undefined
+Default  → fallback value
+```
+
+---
+
+## 8. Parameter Order Matters
+
+This is valid:
+
+```ts
+function greet3(name: string, age?: number) {
 
 }
-// but this is problematic:
-// function greet4(age?: number, name: string){
+```
+
+But this is problematic:
+
+```ts
+// function greet4(age?: number, name: string) {
 
 // }
-// A required parameter generally cannot come after an optional parameter. the optinal parameter must come after the required parameter.
+```
 
-// 9. Real-World Example
-// Imagine a user registration function:
-function createUser(userName: string, age: number, isAdmin: boolean): string{
-    return `${userName} - ${age} - ${isAdmin}`
+A required parameter generally cannot come after an optional parameter. The optional parameter must come after the required parameter.
+
+---
+
+## 9. Real-World Example
+
+Imagine a user registration function:
+
+```ts
+function createUser(
+    userName: string,
+    age: number,
+    isAdmin: boolean
+): string {
+    return `${userName} - ${age} - ${isAdmin}`;
 }
-// Now TypeScript guarantees the function's contract:
+```
 
-// This becomes extremely valuable when applications have hundreds of functions.
+Now TypeScript guarantees the function's contract.
 
+This becomes extremely valuable when applications have hundreds of functions.
 
-/*
-🧠 Concept Verification — My Turn
-Q1. in the first function the return type was declared but in the second one typeScript automatically determines the return type by seeing the parameter type. this is called typeScript return inference.
+---
 
-Q2. This ? means the name parameter is optional. typescript won't give error for not passing the argument. conceptually this is means 
-(name: string | undefined). we should be aware that name might be undefined.
+# 🧠 Concept Verification — My Turn
 
-Q3: first one is optional parameter means the parameter is optional.second one is default parameter. in default parameter a default set value will be show if the argument is not passed. default parameter is the inbuilt feature of js that't why TS will also have this.
+### Q1
 
-Q4. in this function both parameter type was declared as number and also return type is number.
+In the first function the return type was declared but in the second one TypeScript automatically determines the return type by seeing the parameter type. This is called TypeScript return inference.
 
-1st call (5, 10) is valid. the output will be: 50
-2nd call (5, "10") is invalid. because 10 is written as string that mismatches with the 2nd parameter type number.
-3rd: typescript will show runtime error: NaN. because number * undefined is NaN.
+### Q2
 
-Q5. This is useful for big projects, public API. In this form the code looks clean readable and maintainable. If another developer sees the code he or she can easily understand by seeing the function contract.
-*/
+This `?` means the name parameter is optional. TypeScript won't give error for not passing the argument. Conceptually this means:
+
+```ts
+(name: string | undefined)
+```
+
+We should be aware that name might be undefined.
+
+### Q3
+
+First one is optional parameter means the parameter is optional. Second one is default parameter. In default parameter a default set value will be show if the argument is not passed. Default parameter is the inbuilt feature of JS that's why TS will also have this.
+
+### Q4
+
+In this function both parameter type was declared as number and also return type is number.
+
+1st call `(5, 10)` is valid. The output will be: `50`
+
+2nd call `(5, "10")` is invalid. Because 10 is written as string that mismatches with the 2nd parameter type number.
+
+3rd: TypeScript will show runtime error: `NaN`. Because number * undefined is NaN.
+
+### Q5
+
+This is useful for big projects, public API. In this form the code looks clean readable and maintainable. If another developer sees the code he or she can easily understand by seeing the function contract.
+
+---
+
+# Review
+
 Good work. Your **core understanding is strong**, but there are two important corrections. Let's review each one carefully.
+
 
 ## Q1 — Return type vs inference ✅
 
@@ -563,27 +688,85 @@ If yes, explain **why** and how you would reason about fixing it.
 This one tests whether you've really understood the `undefined` issue from Q2.
 
 
-/*
-Now — Day 4 Mini Quiz 🧪
-1. Output: Hello Ifty
-Explanation: here the function is taking one parameter name string and annotated the type string. The function's return type also string.
-then the function is returning in template string Hello + name. then the return is stored in the result variable. then the result is called. everything is valid in this function. even if without return type ts implicitly understand the return type.
+# Day 4 — Mini Quiz 🧪
 
-2. In this function the the parameter type and return type is number but wile passing the argument the value is string. ts will instantly show error before the runtime.
+## 1. Output: `Hello Ifty`
 
-3. number. typeScript automatically infers the return type as number by seeing the parameter type.
+### Answer
 
-4. here the type of name is string and age is number. but the aga is optional here means is can be omitted.
+`Hello Ifty`
 
-5. Welcome Guest 
-Welcome Ifty.
-because value of the name parameter is declared as Guest if the argument is not passed.
+### Explanation
 
-6. here the discount is optional. but while returning the discount looks required parameter to do proper artihmtic operation. ts will instantly show that discount is undefined. the output will be NaN. in order to make it logical the discount type should be a required number.
-while compiling the ts will show: 1 error
+Here the function is taking one parameter `name` as a string and the type is annotated as string. The function's return type is also string.
 
-*/
+Then the function is returning in template string `Hello + name`. Then the return is stored in the `result` variable. Then the result is called.
+
+Everything is valid in this function. Even without the return type, TypeScript implicitly understands the return type.
+
+---
+
+## 2. Error Detection
+
+In this function, the parameter type and return type are number, but while passing the argument the value is string.
+
+TypeScript will instantly show an error before runtime.
+
+---
+
+## 3. Return Type Analysis
+
+`number`
+
+TypeScript automatically infers the return type as number by seeing the parameter type.
+
+---
+
+## 4. Optional Parameter
+
+Here the type of `name` is string and `age` is number.
+
+But the `age` is optional here, which means it can be omitted.
+
+---
+
+## 5. Default Parameter
+
+### Output
+
+```text
+Welcome Guest
+Welcome Ifty
+```
+
+### Explanation
+
+Because the value of the `name` parameter is declared as `Guest` if the argument is not passed.
+
+---
+
+## 6. Optional Parameter & Arithmetic
+
+Here the `discount` is optional. But while returning, the discount looks like a required parameter to do proper arithmetic operation.
+
+TypeScript will instantly show that discount is `undefined`.
+
+The output will be `NaN`.
+
+In order to make it logical, the discount type should be a required number.
+
+While compiling the TypeScript will show:
+
+```text
+1 error
+```
+
+---
+
+# Review
+
 Excellent attempt. You're getting the **function contract idea**, but Q4 and especially Q6 reveal an important TypeScript detail we should lock down before moving forward.
+
 
 ## 🧪 Mini Quiz Review
 
