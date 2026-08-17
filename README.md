@@ -2,7 +2,7 @@
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
 ![Phase](https://img.shields.io/badge/Phase-1%20Fundamentals-success)
-![Day](https://img.shields.io/badge/Completed-Day%205-brightgreen)
+![Day](https://img.shields.io/badge/Completed-Day%206-brightgreen)
 ![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
 
 Learning TypeScript in public.
@@ -35,7 +35,8 @@ Progress:
 * ✅ Day 3 — Arrays, Tuples & Object Types
 * ✅ Day 4 — Functions & Parameters
 * ✅ Day 5 — Optional & Default Parameters
-* 🚀 Next: Day 6 — Union Types
+* ✅ Day 6 — Union Types
+* 🚀 Next: Day 7 — Literal Types
 
 ---
 
@@ -71,8 +72,9 @@ typescript-learning-journey/
 │   ├── DAY_03.md
 │   ├── DAY_04.md
 │   ├── DAY_05.md
+│   ├── DAY_06.md
 │   └── ...
-```
+````
 
 ---
 
@@ -126,6 +128,24 @@ typescript-learning-journey/
 * Practical Function Design
 * TypeScript Function Behavior
 
+### Day 6
+
+* Union Types
+* The `|` operator
+* Multiple possible types
+* Union Types in Variables
+* Union Types in Function Parameters
+* Union Types in Return Values
+* Union Types in Object Types
+* Union Types vs `any`
+* Type-safe handling of multiple possible types
+* Basic Type Narrowing
+* `typeof` Type Guards
+* Control-flow based Type Narrowing
+* Practical API/Data Modeling
+* Union Types in React
+* Debugging function calls and test cases
+
 ---
 
 ## Progress Tracking
@@ -140,6 +160,7 @@ Current Streak:
 * ✅ Day 3
 * ✅ Day 4
 * ✅ Day 5
+* ✅ Day 6
 
 Current Confidence:
 
@@ -149,6 +170,7 @@ Current Confidence:
 * Day 3 — 8.8/10
 * Day 4 — 9/10
 * Day 5 — 9/10
+* Day 6 — 9.5/10
 
 ---
 
@@ -165,3 +187,10 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 🚀 Learning in Public
 📚 Currently studying TypeScript Fundamentals
 🎯 Target: React + TypeScript → Full-Stack TypeScript Development
+
+```
+
+**README status after this update:**
+
+**Day 6 completed → Day 7: Literal Types.** The project instructions explicitly include **Union Types → Literal Types** in Phase 1. :contentReference[oaicite:1]{index=1}
+```
