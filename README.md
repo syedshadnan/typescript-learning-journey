@@ -2,7 +2,7 @@
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
 ![Phase](https://img.shields.io/badge/Phase-1%20Fundamentals-success)
-![Day](https://img.shields.io/badge/Completed-Day%206-brightgreen)
+![Day](https://img.shields.io/badge/Completed-Day%207-brightgreen)
 ![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
 
 Learning TypeScript in public.
@@ -36,7 +36,8 @@ Progress:
 * ✅ Day 4 — Functions & Parameters
 * ✅ Day 5 — Optional & Default Parameters
 * ✅ Day 6 — Union Types
-* 🚀 Next: Day 7 — Literal Types
+* ✅ Day 7 — Literal Types
+* 🚀 Next: Day 8 — TypeScript Fundamentals Revision & Type Inference
 
 ---
 
@@ -73,8 +74,9 @@ typescript-learning-journey/
 │   ├── DAY_04.md
 │   ├── DAY_05.md
 │   ├── DAY_06.md
+│   ├── DAY_07.md
 │   └── ...
-````
+```
 
 ---
 
@@ -146,6 +148,29 @@ typescript-learning-journey/
 * Union Types in React
 * Debugging function calls and test cases
 
+### Day 7
+
+* Literal Types
+* Literal Type Unions
+* String Literal Types
+* Number Literal Types
+* Boolean Literal Types
+* Literal Widening
+* `let` vs `const` Type Inference
+* Object Property Widening
+* `as const`
+* Literal Type Preservation
+* Readonly Properties with `as const`
+* Readonly Tuples
+* Compile-time Readonly vs Runtime Immutability
+* Object Typing with Literal Unions
+* Practical Finite-State Modeling
+* Type-safe Function Parameters
+* User Roles
+* Order Statuses
+* Payment Methods
+* Priority Levels
+
 ---
 
 ## Progress Tracking
@@ -161,6 +186,7 @@ Current Streak:
 * ✅ Day 4
 * ✅ Day 5
 * ✅ Day 6
+* ✅ Day 7
 
 Current Confidence:
 
@@ -171,6 +197,12 @@ Current Confidence:
 * Day 4 — 9/10
 * Day 5 — 9/10
 * Day 6 — 9.5/10
+* Day 7 — 9.5/10
+
+Interview Readiness:
+
+* Day 6 — 9.9/10
+* Day 7 — 9.7/10
 
 ---
 
@@ -188,9 +220,10 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 📚 Currently studying TypeScript Fundamentals
 🎯 Target: React + TypeScript → Full-Stack TypeScript Development
 
-```
+---
 
 **README status after this update:**
 
-**Day 6 completed → Day 7: Literal Types.** The project instructions explicitly include **Union Types → Literal Types** in Phase 1. :contentReference[oaicite:1]{index=1}
-```
+**Day 7 completed → Day 8: TypeScript Fundamentals Revision & Type Inference.**
+
+Day 7 completed the Literal Types portion of the current TypeScript fundamentals progression.

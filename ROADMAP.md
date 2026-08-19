@@ -42,7 +42,7 @@ Topics:
 Practice Goal:
 - Build a small calculator or number guessing game
 
-Status: ⏳ Not Started
+Status: 🔄 In Progress
 
 ---
 
