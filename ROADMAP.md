@@ -37,12 +37,13 @@ Topics:
 - Functions
 - Optional and default parameters
 - Union types
+- Literal types
 - Type inference
 
 Practice Goal:
 - Build a small calculator or number guessing game
 
-Status: 🔄 In Progress
+Status:  ✅ Completed
 
 ---
 
@@ -55,13 +56,12 @@ Topics:
 - Interfaces
 - Optional properties
 - Readonly properties
-- Literal types
-- Enums
+- Nested objects
 
 Practice Goal:
 - Create a typed user/profile model for an app
 
-Status: ⏳ Not Started
+Status: 🔄 In Progress
 
 ---
 
