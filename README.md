@@ -1,10 +1,6 @@
-হ্যাঁ। Day 8 অনুযায়ী README-তে শুধু Day 8 যোগ করলেই হবে না—**Current Status, Roadmap, Repository Structure, Topics, Streak, Confidence, Interview Readiness, এবং final status** সব update করা উচিত।
-
-নিচেরটা পুরো updated `README.md`:
-
 # TypeScript Learning Journey 🚀
 
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
+![TypeScript](https://img.shields.io/badge/TypeScript-7-blue?logo=typescript)
 
 ![Phase](https://img.shields.io/badge/Phase-2%20Object%20Typing-success)
 
