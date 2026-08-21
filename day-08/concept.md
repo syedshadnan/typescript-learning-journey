@@ -1,8 +1,3 @@
-Absolutely, Ifty. **Day 8 শুরু করি.** 🚀
-
-আমি তোমার current project sources review করেছি—বিশেষ করে mentor instructions, Day 0–7 logs, README এবং roadmap। তোমার current position হলো:
-
-> ✅ Day 0–7 complete
 > 🎯 **Day 8 — TypeScript Fundamentals Revision & Type Inference**
 
 তোমার Day 7 log-ও বলছে আজকের session-এ fundamentals consolidate করে Type Inference-এ focus করার কথা।  
