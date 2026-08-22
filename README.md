@@ -1,11 +1,8 @@
 # TypeScript Learning Journey 🚀
 
-![TypeScript](https://img.shields.io/badge/TypeScript-7-blue?logo=typescript)
-
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
 ![Phase](https://img.shields.io/badge/Phase-2%20Object%20Typing-success)
-
-![Day](https://img.shields.io/badge/Completed-Day%208-brightgreen)
-
+![Day](https://img.shields.io/badge/Completed-Day%209-brightgreen)
 ![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
 
 Learning TypeScript in public.
@@ -28,7 +25,7 @@ JavaScript
 
 ## Current Status
 
-Current Phase: **Phase 2 — Object Typing**
+**Current Phase: Phase 2 — Object Typing**
 
 Progress:
 
@@ -41,7 +38,8 @@ Progress:
 * ✅ Day 6 — Union Types
 * ✅ Day 7 — Literal Types
 * ✅ Day 8 — Fundamentals Revision & Type Inference
-* 🚀 Next: Day 9 — Object Typing
+* ✅ Day 9 — Type Aliases & Object Typing
+* 🚀 Next: Day 10 — Optional Properties & Readonly Properties
 
 ---
 
@@ -57,7 +55,7 @@ Progress:
 * [ ] Phase 7 — Backend TypeScript
 * [ ] Phase 8 — Real-World Projects
 
-See `ROADMAP.md` for details.
+See ROADMAP.md for details.
 
 ---
 
@@ -66,23 +64,27 @@ See `ROADMAP.md` for details.
 ```text
 typescript-learning-journey/
 │
-├── DAY_00_SETUP.md
-├── DAY_01.md
-├── DAY_02.md
-├── DAY_03.md
-├── DAY_04.md
-├── DAY_05.md
-├── DAY_06.md
-├── DAY_07.md
-├── DAY_08.md
-│
-├── learning-logs/
-│   ├── DAY_08_REVIEW.md
-│   └── ...
-│
 ├── README.md
 ├── ROADMAP.md
-└── MENTOR_INSTRUCTIONS.md
+├── MENTOR_INSTRUCTIONS.md
+│
+├── learning-logs/
+│   ├── DAY_00_SETUP.md
+│   ├── DAY_01.md
+│   ├── DAY_02.md
+│   ├── DAY_03.md
+│   ├── DAY_04.md
+│   ├── DAY_05.md
+│   ├── DAY_06.md
+│   ├── DAY_07.md
+│   ├── DAY_08.md
+│   ├── DAY_09.md
+│   └── ...
+│
+└── review/
+    ├── DAY_08_REVIEW.md
+    ├── DAY_09_REVIEW.md
+    └── ...
 ```
 
 ---
@@ -95,6 +97,8 @@ typescript-learning-journey/
 * Why TypeScript exists
 * Static vs Dynamic Typing
 * TypeScript Compilation Process
+* TypeScript compiler (`tsc`)
+* Type annotations and their removal during compilation
 
 ### Day 2
 
@@ -103,6 +107,7 @@ typescript-learning-journey/
 * Type Annotations
 * Type Safety
 * `null` vs `undefined`
+* Explicit vs implicit typing
 
 ### Day 3
 
@@ -111,6 +116,7 @@ typescript-learning-journey/
 * Tuples
 * Object Types
 * Type Safety with Collections
+* Typed arrays and tuples
 
 ### Day 4
 
@@ -181,25 +187,33 @@ typescript-learning-journey/
 ### Day 8
 
 * Type Inference
-* Explicit Typing vs Type Inference
-* Type Inference from Initial Values
-* Function Return Type Inference
-* Object Type Inference
+* Explicit vs Inferred Types
 * Literal Widening
-* `let` vs `const` Type Inference
-* Object Property Type Widening
+* `let` vs `const`
+* Object Type Inference
 * `const` vs `as const`
-* `as const` and Literal Type Preservation
-* `as const` and Readonly Properties
 * Compile-time Readonly vs Runtime Immutability
 * Union Types Revision
 * Type Narrowing Revision
-* `typeof` as a Type Guard
-* Control-flow Based Type Narrowing
-* TypeScript Type Contracts
-* Finite Valid States Using Literal Unions
-* Practical TypeScript Usage in React Component Props
-* Debugging Object Values and Property Access
+* `typeof` Type Guards
+* Literal Unions in Real-world Use
+* Practical Type-safe Object Modeling
+* Debugging typed object access
+
+### Day 9
+
+* Type Aliases
+* Reusable Type Definitions
+* Object Type Contracts
+* Type Alias with Object Structures
+* Type Alias with Literal Unions
+* Type Alias in Function Parameters
+* Reusable Data Modeling
+* Type Alias vs Actual Runtime Objects
+* Compile-time Type Erasure
+* Type Inference with Typed Functions
+* `let` Reassignment vs Type Restrictions
+* Practical `User`, `Product`, and `Order` Models
 
 ---
 
@@ -218,6 +232,7 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * ✅ Day 6
 * ✅ Day 7
 * ✅ Day 8
+* ✅ Day 9
 
 ### Current Confidence
 
@@ -230,32 +245,72 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * Day 6 — 9.5/10
 * Day 7 — 9.5/10
 * Day 8 — 9.5/10
+* Day 9 — 9.5/10
 
 ### Interview Readiness
 
 * Day 6 — 9.9/10
 * Day 7 — 9.7/10
 * Day 8 — 9.1/10
+* Day 9 — 9.5/10
+
+### Day 9 Assessment
+
+* Concept Understanding — 9.5/10
+* Coding — 10/10
+* Interview — 9.5/10
+* Practical Reasoning — 9.5/10
+* Overall — **9.6/10**
+
+### Day 9 Practice
+
+Successfully completed:
+
+* User Type Alias
+* Product Type Alias
+* Order Type Alias
+* Typed functions using reusable object contracts
+* Literal unions inside object models
+
+### Current Weak Area
+
+Continue reinforcing:
+
+```text
+let / const
+→ variable behavior
+
+Type
+→ allowed values
+```
+
+`let` allows reassignment, but the declared type still determines which values can be assigned.
 
 ---
 
-## Phase 1 Milestone
+## First TypeScript Mini-Project
 
-**Phase 1 — TypeScript Fundamentals: ✅ Completed**
+### 🎯 Number Guessing Game
 
-Completed core topics:
+Built a core-logic number guessing game using TypeScript fundamentals from the first phase.
 
-* Primitive Types
-* Arrays and Tuples
-* Objects
+The project combines:
+
+* Variables
+* Type annotations
+* Type inference
 * Functions
-* Optional Parameters
-* Default Parameters
-* Union Types
-* Literal Types
-* Type Inference
+* Function parameters
+* Conditional logic
+* Arrays
+* `for...of` loops
+* `break`
+* Function return values
+* Basic state management
 
-The fundamentals phase is now complete. The next stage focuses on structured and reusable object typing.
+**Status:** ✅ Completed
+
+**Version:** 1.0 — Core Logic
 
 ---
 
@@ -269,16 +324,16 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 
 ## Status
 
-🚀 Learning in Public
-
-📚 **Phase 1 — TypeScript Fundamentals Completed**
-
-🎯 **Currently entering Phase 2 — Object Typing**
-
-→ TypeScript → React + TypeScript → Full-Stack TypeScript Development
+🚀 Learning in Public  
+📚 Currently studying Phase 2 — Object Typing  
+🎯 Target: React + TypeScript → Full-Stack TypeScript Development
 
 ---
 
-**README status after this update:**
+**README status after Day 9:**
 
-**Day 8 completed → Phase 1 completed → Day 9: Object Typing.**
+**Day 9 completed → Day 10: Optional Properties & Readonly Properties.**
+
+Phase 1 — TypeScript Fundamentals is completed.
+
+Phase 2 — Object Typing is now in progress, beginning with Type Aliases and moving toward Interfaces, Optional Properties, Readonly Properties, and Nested Objects.
