@@ -1,17 +1,16 @@
 # TypeScript Learning Journey 🚀
 
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
-![Phase](https://img.shields.io/badge/Phase-2%20Object%20Typing-success)
-![Day](https://img.shields.io/badge/Completed-Day%209-brightgreen)
-![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
+![TypeScript]([https://img.shields.io/badge/TypeScript-7.x-blue?logo=typescript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript))
+![Phase]([https://img.shields.io/badge/Phase-2%20Object%20Typing-success](https://img.shields.io/badge/Phase-2%20Object%20Typing-success))
+![Day]([https://img.shields.io/badge/Completed-Day%2010-brightgreen](https://img.shields.io/badge/Completed-Day%2010-brightgreen))
+![LearningInPublic]([https://img.shields.io/badge/Learning-In%20Public-purple](https://img.shields.io/badge/Learning-In%20Public-purple))
 
 Learning TypeScript in public.
-
 This repository documents my journey of learning TypeScript, React + TypeScript, and backend development with TypeScript.
 
 ## Goal
 
-JavaScript
+→ JavaScript
 
 → TypeScript
 
@@ -20,13 +19,11 @@ JavaScript
 → Full-Stack TypeScript Development
 
 → Production-Ready Software Engineer
-
 ---
 
 ## Current Status
 
 **Current Phase: Phase 2 — Object Typing**
-
 Progress:
 
 * ✅ Day 0 — Setup & Environment
@@ -39,8 +36,9 @@ Progress:
 * ✅ Day 7 — Literal Types
 * ✅ Day 8 — Fundamentals Revision & Type Inference
 * ✅ Day 9 — Type Aliases & Object Typing
-* 🚀 Next: Day 10 — Optional Properties & Readonly Properties
+* ✅ Day 10 — Optional Properties & Readonly Properties
 
+* 🚀 Next: Day 11 — Nested Objects
 ---
 
 ## Learning Roadmap
@@ -56,7 +54,6 @@ Progress:
 * [ ] Phase 8 — Real-World Projects
 
 See ROADMAP.md for details.
-
 ---
 
 ## Repository Structure
@@ -86,13 +83,11 @@ typescript-learning-journey/
     ├── DAY_09_REVIEW.md
     └── ...
 ```
-
 ---
 
 ## Topics Covered So Far
 
 ### Day 1
-
 * What TypeScript is
 * Why TypeScript exists
 * Static vs Dynamic Typing
@@ -101,7 +96,6 @@ typescript-learning-journey/
 * Type annotations and their removal during compilation
 
 ### Day 2
-
 * Primitive Types
 * Type Inference
 * Type Annotations
@@ -110,7 +104,6 @@ typescript-learning-journey/
 * Explicit vs implicit typing
 
 ### Day 3
-
 * Arrays
 * Array Type Inference
 * Tuples
@@ -119,7 +112,6 @@ typescript-learning-journey/
 * Typed arrays and tuples
 
 ### Day 4
-
 * Functions in TypeScript
 * Parameter Type Annotations
 * Return Type Annotations
@@ -132,7 +124,6 @@ typescript-learning-journey/
 * Arrow Functions with TypeScript
 
 ### Day 5
-
 * Optional Parameters
 * Default Parameters
 * Difference between Optional and Default Parameters
@@ -144,7 +135,6 @@ typescript-learning-journey/
 * TypeScript Function Behavior
 
 ### Day 6
-
 * Union Types
 * The `|` operator
 * Multiple possible types
@@ -162,7 +152,6 @@ typescript-learning-journey/
 * Debugging function calls and test cases
 
 ### Day 7
-
 * Literal Types
 * Literal Type Unions
 * String Literal Types
@@ -185,7 +174,6 @@ typescript-learning-journey/
 * Priority Levels
 
 ### Day 8
-
 * Type Inference
 * Explicit vs Inferred Types
 * Literal Widening
@@ -201,7 +189,6 @@ typescript-learning-journey/
 * Debugging typed object access
 
 ### Day 9
-
 * Type Aliases
 * Reusable Type Definitions
 * Object Type Contracts
@@ -215,6 +202,23 @@ typescript-learning-journey/
 * `let` Reassignment vs Type Restrictions
 * Practical `User`, `Product`, and `Order` Models
 
+### Day 10
+* Optional Properties
+* `?` syntax for optional properties
+* Optional Properties and `undefined`
+* Type Narrowing with Optional Properties
+* Safe handling of optional properties
+* Readonly Properties
+* `readonly` property restrictions
+* `readonly` vs `const`
+* Compile-time Readonly vs Runtime Immutability
+* Combining Optional and Readonly Properties
+* Literal Unions with Object Models
+* Practical Object Data Modeling
+* User Profile Modeling
+* Product Modeling
+* User Account Modeling
+* Type-safe functions using optional and readonly properties
 ---
 
 ## Progress Tracking
@@ -233,6 +237,7 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * ✅ Day 7
 * ✅ Day 8
 * ✅ Day 9
+* ✅ Day 10
 
 ### Current Confidence
 
@@ -246,6 +251,7 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * Day 7 — 9.5/10
 * Day 8 — 9.5/10
 * Day 9 — 9.5/10
+* Day 10 — 9.5/10
 
 ### Interview Readiness
 
@@ -253,39 +259,15 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * Day 7 — 9.7/10
 * Day 8 — 9.1/10
 * Day 9 — 9.5/10
+* Day 10 — 9.5/10
 
-### Day 9 Assessment
+### Day 10 Assessment
 
 * Concept Understanding — 9.5/10
 * Coding — 10/10
 * Interview — 9.5/10
 * Practical Reasoning — 9.5/10
 * Overall — **9.6/10**
-
-### Day 9 Practice
-
-Successfully completed:
-
-* User Type Alias
-* Product Type Alias
-* Order Type Alias
-* Typed functions using reusable object contracts
-* Literal unions inside object models
-
-### Current Weak Area
-
-Continue reinforcing:
-
-```text
-let / const
-→ variable behavior
-
-Type
-→ allowed values
-```
-
-`let` allows reassignment, but the declared type still determines which values can be assigned.
-
 ---
 
 ## First TypeScript Mini-Project
@@ -293,9 +275,7 @@ Type
 ### 🎯 Number Guessing Game
 
 Built a core-logic number guessing game using TypeScript fundamentals from the first phase.
-
 The project combines:
-
 * Variables
 * Type annotations
 * Type inference
@@ -307,33 +287,25 @@ The project combines:
 * `break`
 * Function return values
 * Basic state management
-
 **Status:** ✅ Completed
-
 **Version:** 1.0 — Core Logic
-
 ---
 
 ## Motivation
 
 The goal is not just to learn TypeScript syntax.
-
 The goal is to understand how TypeScript is used in real-world React and full-stack applications and build production-ready software.
-
 ---
 
 ## Status
 
-🚀 Learning in Public  
-📚 Currently studying Phase 2 — Object Typing  
+🚀 Learning in Public
+📚 Currently studying Phase 2 — Object Typing
 🎯 Target: React + TypeScript → Full-Stack TypeScript Development
-
 ---
 
-**README status after Day 9:**
+**README status after Day 10:**
 
-**Day 9 completed → Day 10: Optional Properties & Readonly Properties.**
-
+**Day 10 completed → Day 11: Nested Objects.**
 Phase 1 — TypeScript Fundamentals is completed.
-
-Phase 2 — Object Typing is now in progress, beginning with Type Aliases and moving toward Interfaces, Optional Properties, Readonly Properties, and Nested Objects.
+Phase 2 — Object Typing is now in progress, continuing from Type Aliases and moving toward Interfaces, Optional Properties, Readonly Properties, and Nested Objects.
