@@ -1,13 +1,13 @@
 ````markdown
 # TypeScript Learning Journey 🚀
 
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
+![TypeScript]([https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript))
 
-![Phase](https://img.shields.io/badge/Phase-2%20Object%20Typing-success)
+![Phase]([https://img.shields.io/badge/Phase-2%20Object%20Typing-success](https://img.shields.io/badge/Phase-2%20Object%20Typing-success))
 
-![Day](https://img.shields.io/badge/Completed-Day%2010-brightgreen)
+![Day]([https://img.shields.io/badge/Completed-Day%2010-brightgreen](https://img.shields.io/badge/Completed-Day%2010-brightgreen))
 
-![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
+![LearningInPublic]([https://img.shields.io/badge/Learning-In%20Public-purple](https://img.shields.io/badge/Learning-In%20Public-purple))
 
 Learning TypeScript in public.
 
@@ -15,7 +15,7 @@ This repository documents my journey of learning TypeScript, React + TypeScript,
 
 ## Goal
 
-→ JavaScript
+JavaScript
 
 → TypeScript
 
@@ -462,7 +462,23 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 
 * Overall — **9.6/10**
 
----
+### Day 10 Practice
+
+Successfully completed:
+
+* User Profile Type
+
+* Product Type Alias
+
+* User Account Type
+
+* Typed functions using optional and readonly properties
+
+* Type narrowing for optional properties
+
+* Readonly and mutable property handling
+
+**---**
 
 ## First TypeScript Mini-Project
 
@@ -524,5 +540,7 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 
 Phase 1 — TypeScript Fundamentals is completed.
 
-Phase 2 — Object Typing is now in progress, continuing from Type Aliases and moving toward Interfaces, Optional Properties, Readonly Properties, and Nested Objects.
+Phase 2 — Object Typing is now in progress, beginning with Type Aliases and moving toward Interfaces, Optional Properties, Readonly Properties, and Nested Objects.
 
+```
+```
