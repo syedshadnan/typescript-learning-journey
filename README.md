@@ -1,4 +1,3 @@
-````markdown
 # TypeScript Learning Journey 🚀
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
@@ -71,55 +70,31 @@ See ROADMAP.md for details.
 typescript-learning-journey/
 
 │
-
 ├── README.md
-
 ├── ROADMAP.md
-
 ├── MENTOR_INSTRUCTIONS.md
-
 │
-
 ├── learning-logs/
-
 │   ├── DAY_00_SETUP.md
-
 │   ├── DAY_01.md
-
 │   ├── DAY_02.md
-
 │   ├── DAY_03.md
-
 │   ├── DAY_04.md
-
 │   ├── DAY_05.md
-
 │   ├── DAY_06.md
-
 │   ├── DAY_07.md
-
 │   ├── DAY_08.md
-
 │   ├── DAY_09.md
-
 │   ├── DAY_10.md
-
 │   ├── DAY_11.md
-
 │   └── ...
-
 │
-
 └── review/
-
     ├── DAY_08_REVIEW.md
-
     ├── DAY_09_REVIEW.md
-
     ├── DAY_11_REVIEW.md
-
     └── ...
-````
+```
 
 ---
 
@@ -353,7 +328,6 @@ Successfully completed:
 * Readonly property inside an object model
 * Type-safe functions using nested object structures
 
-
 ---
 
 ## First TypeScript Mini-Project
@@ -407,6 +381,3 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 Phase 1 — TypeScript Fundamentals is completed.
 
 Phase 2 — Object Typing is now in progress, continuing from Type Aliases, Optional Properties, Readonly Properties, and Nested Objects, with Interfaces as the next catch-up topic.
-
-```
-```
