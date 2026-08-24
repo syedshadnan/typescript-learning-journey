@@ -1,10 +1,11 @@
+````markdown
 # TypeScript Learning Journey 🚀
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
 
 ![Phase](https://img.shields.io/badge/Phase-2%20Object%20Typing-success)
 
-![Day](https://img.shields.io/badge/Completed-Day%2010-brightgreen)
+![Day](https://img.shields.io/badge/Completed-Day%2011-brightgreen)
 
 ![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
 
@@ -43,7 +44,8 @@ Progress:
 * ✅ Day 8 — Fundamentals Revision & Type Inference
 * ✅ Day 9 — Type Aliases & Object Typing
 * ✅ Day 10 — Optional Properties & Readonly Properties
-* 🚀 Next: Day 11 — Nested Objects
+* ✅ Day 11 — Nested Objects
+* 🚀 Next: Day 12 — Interfaces
 
 ---
 
@@ -100,6 +102,10 @@ typescript-learning-journey/
 
 │   ├── DAY_09.md
 
+│   ├── DAY_10.md
+
+│   ├── DAY_11.md
+
 │   └── ...
 
 │
@@ -110,9 +116,10 @@ typescript-learning-journey/
 
     ├── DAY_09_REVIEW.md
 
-    └── ...
+    ├── DAY_11_REVIEW.md
 
-```
+    └── ...
+````
 
 ---
 
@@ -261,6 +268,27 @@ typescript-learning-journey/
 * User Account Modeling
 * Type-safe functions using optional and readonly properties
 
+### Day 11
+
+* Nested Objects
+* Nested Object Typing
+* Anonymous Object Types
+* Accessing Nested Properties
+* Multiple Levels of Object Nesting
+* Optional Nested Objects
+* Optional Properties inside Nested Objects
+* `object | undefined` with Optional Nested Objects
+* Optional Chaining (`?.`)
+* Safe Access to Optional Nested Properties
+* Difference between Missing Properties and Optional Properties
+* Nested Objects in Function Parameters
+* Practical Nested Data Modeling
+* User Profile Modeling
+* Student Contact Modeling
+* E-commerce Order Modeling
+* Type-safe Nested Property Access
+* `readonly` Properties inside Nested Object Models
+
 ---
 
 ## Progress Tracking
@@ -280,6 +308,7 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * ✅ Day 8
 * ✅ Day 9
 * ✅ Day 10
+* ✅ Day 11
 
 ### Current Confidence
 
@@ -294,6 +323,7 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * Day 8 — 9.5/10
 * Day 9 — 9.5/10
 * Day 10 — 9.5/10
+* Day 11 — 9.8/10
 
 ### Interview Readiness
 
@@ -302,14 +332,28 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * Day 8 — 9.1/10
 * Day 9 — 9.5/10
 * Day 10 — 9.5/10
+* Day 11 — 9.7/10
 
-### Day 10 Assessment
+### Day 11 Assessment
 
-* Concept Understanding — 9.5/10
-* Coding — 10/10
-* Interview — 9.5/10
-* Practical Reasoning — 9.5/10
-* Overall — **9.6/10**
+* Concept Understanding — 9.8/10
+* Coding — 9.8/10
+* Interview — 9.7/10
+* Practical Reasoning — 9.7/10
+* Overall — **9.8/10**
+
+### Day 11 Practice
+
+Successfully completed:
+
+* User Profile with nested address
+* Student Contact with nested contact and address
+* Optional nested phone property handling
+* E-commerce Order with multiple levels of nesting
+* Readonly property inside an object model
+* Type-safe functions using nested object structures
+
+
 ---
 
 ## First TypeScript Mini-Project
@@ -348,18 +392,21 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 
 ## Status
 
-🚀 Learning in Public  
+🚀 Learning in Public
 
-📚 Currently studying Phase 2 — Object Typing  
+📚 Currently studying Phase 2 — Object Typing
 
 🎯 Target: React + TypeScript → Full-Stack TypeScript Development
 
 ---
 
-**README status after Day 10:**
+**README status after Day 11:**
 
-**Day 10 completed → Day 11: Nested Objects.**
+**Day 11 completed → Day 12: Interfaces.**
 
 Phase 1 — TypeScript Fundamentals is completed.
 
-Phase 2 — Object Typing is now in progress, beginning with Type Aliases and moving toward Interfaces, Optional Properties, Readonly Properties, and Nested Objects.
+Phase 2 — Object Typing is now in progress, continuing from Type Aliases, Optional Properties, Readonly Properties, and Nested Objects, with Interfaces as the next catch-up topic.
+
+```
+```
