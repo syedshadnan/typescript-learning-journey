@@ -1,7 +1,7 @@
 # TypeScript Learning Journey 🚀
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
-![Phase](https://img.shields.io/badge/Phase-2%20Object%20Typing-success)
+![Phase](https://img.shields.io/badge/Phase-3%20Advanced%20Types-success)
 ![Day](https://img.shields.io/badge/Completed-Day%2012-brightgreen)
 ![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
 
@@ -25,7 +25,7 @@ JavaScript
 
 ## Current Status
 
-**Current Phase: Phase 2 — Object Typing**
+**Current Phase: Phase 3 — Advanced Types**
 
 Progress:
 
@@ -42,7 +42,7 @@ Progress:
 - ✅ Day 10 — Optional Properties & Readonly Properties
 - ✅ Day 11 — Nested Objects
 - ✅ Day 12 — Interfaces
-- 🚀 Next: Continue Phase 2 — Object Typing
+- 🚀 Next: Day 13 — Intersection Types
 
 ---
 
@@ -50,7 +50,7 @@ Progress:
 
 - [x] Phase 0 — Setup and Foundations
 - [x] Phase 1 — TypeScript Fundamentals
-- [ ] Phase 2 — Object Typing
+- [x] Phase 2 — Object Typing
 - [ ] Phase 3 — Advanced Types
 - [ ] Phase 4 — Generics
 - [ ] Phase 5 — Object-Oriented Programming
@@ -387,7 +387,9 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 
 🚀 Learning in Public
 
-📚 Currently studying Phase 2 — Object Typing
+📚 Phase 2 — Object Typing completed
+
+📚 Currently starting Phase 3 — Advanced Types
 
 🎯 Target: React + TypeScript → Full-Stack TypeScript Development
 
@@ -399,14 +401,6 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 
 Phase 1 — TypeScript Fundamentals is completed.
 
-Phase 2 — Object Typing is now in progress.
+Phase 2 — Object Typing is completed.
 
-So far, I have covered:
-
-- Type Aliases
-- Optional Properties
-- Readonly Properties
-- Nested Objects
-- Interfaces
-
-The next learning objective will continue Phase 2 according to the roadmap in `MASTER_SOURCE.md`.
+The next phase is **Phase 3 — Advanced Types**, starting with **Intersection Types (`&`)** according to the roadmap in `MASTER_SOURCE.md`.
