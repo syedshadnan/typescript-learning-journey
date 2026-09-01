@@ -1,10 +1,11 @@
+````md
 # TypeScript Learning Journey 🚀
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
 
 ![Phase](https://img.shields.io/badge/Phase-2%20Object%20Typing-success)
 
-![Day](https://img.shields.io/badge/Completed-Day%2011-brightgreen)
+![Day](https://img.shields.io/badge/Completed-Day%2012-brightgreen)
 
 ![LearningInPublic](https://img.shields.io/badge/Learning-In%20Public-purple)
 
@@ -44,7 +45,8 @@ Progress:
 * ✅ Day 9 — Type Aliases & Object Typing
 * ✅ Day 10 — Optional Properties & Readonly Properties
 * ✅ Day 11 — Nested Objects
-* 🚀 Next: Day 12 — Interfaces
+* ✅ Day 12 — Interfaces
+* 🚀 Next: Continue Phase 2 — Object Typing
 
 ---
 
@@ -87,14 +89,16 @@ typescript-learning-journey/
 │   ├── DAY_09.md
 │   ├── DAY_10.md
 │   ├── DAY_11.md
+│   ├── DAY_12.md
 │   └── ...
 │
 └── review/
     ├── DAY_08_REVIEW.md
     ├── DAY_09_REVIEW.md
     ├── DAY_11_REVIEW.md
+    ├── DAY_12_REVIEW.md
     └── ...
-```
+````
 
 ---
 
@@ -264,6 +268,28 @@ typescript-learning-journey/
 * Type-safe Nested Property Access
 * `readonly` Properties inside Nested Object Models
 
+### Day 12
+
+* Interfaces
+* Interface as an Object Contract
+* Interface vs Type Alias
+* Optional Properties in Interfaces
+* Readonly Properties in Interfaces
+* `extends`
+* Interface Inheritance
+* Multiple Interface Extension
+* Declaration Merging
+* Nested Interfaces
+* Reusable Object Structures
+* Type-safe Function Parameters
+* Literal Unions inside Interfaces
+* Practical Object Data Modeling
+* User Profile Modeling
+* Admin Extension
+* Product Modeling
+* Customer Modeling
+* E-commerce Order Modeling
+
 ---
 
 ## Progress Tracking
@@ -284,6 +310,7 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * ✅ Day 9
 * ✅ Day 10
 * ✅ Day 11
+* ✅ Day 12
 
 ### Current Confidence
 
@@ -299,6 +326,7 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * Day 9 — 9.5/10
 * Day 10 — 9.5/10
 * Day 11 — 9.8/10
+* Day 12 — 9.8/10
 
 ### Interview Readiness
 
@@ -308,25 +336,28 @@ Learning logs, revision notes, mistakes, interview questions, and milestones are
 * Day 9 — 9.5/10
 * Day 10 — 9.5/10
 * Day 11 — 9.7/10
+* Day 12 — 9.9/10
 
-### Day 11 Assessment
+### Day 12 Assessment
 
-* Concept Understanding — 9.8/10
-* Coding — 9.8/10
-* Interview — 9.7/10
-* Practical Reasoning — 9.7/10
+* Concept Understanding — 9.5/10
+* Coding — 10/10
+* Interview — 9.9/10
+* Practical Reasoning — 9.8/10
 * Overall — **9.8/10**
 
-### Day 11 Practice
+### Day 12 Practice
 
 Successfully completed:
 
-* User Profile with nested address
-* Student Contact with nested contact and address
-* Optional nested phone property handling
-* E-commerce Order with multiple levels of nesting
-* Readonly property inside an object model
-* Type-safe functions using nested object structures
+* User Profile using an interface
+* Admin interface extending User
+* Optional + readonly properties
+* Declaration merging with Customer
+* Nested interfaces
+* Literal unions inside interfaces
+* Type-safe functions using interface-based object contracts
+* E-commerce Order data modeling
 
 ---
 
@@ -374,10 +405,15 @@ The goal is to understand how TypeScript is used in real-world React and full-st
 
 ---
 
-**README status after Day 11:**
+**README status after Day 12:**
 
-**Day 11 completed → Day 12: Interfaces.**
+**Day 12 completed — Interfaces.**
 
 Phase 1 — TypeScript Fundamentals is completed.
 
-Phase 2 — Object Typing is now in progress, continuing from Type Aliases, Optional Properties, Readonly Properties, and Nested Objects, with Interfaces as the next catch-up topic.
+Phase 2 — Object Typing is now in progress. So far, I have covered Type Aliases, Optional Properties, Readonly Properties, Nested Objects, and Interfaces.
+
+The next learning objective will continue Phase 2 according to the roadmap.
+
+```
+```
