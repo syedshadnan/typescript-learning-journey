@@ -356,7 +356,7 @@ Build a small calculator or number guessing game.
 
 Create typed user/profile and real-world data models.
 
-**Status:** 🔄 In Progress
+**Status:** ✅ Completed
 
 ### Current Progress
 
@@ -386,8 +386,7 @@ The Interface topic was intentionally covered as a catch-up topic after Nested O
 
 Build a small API response parser with strong typing.
 
-**Status:** ⏳ Not Started
-
+**Status:** 🔄 In Progress
 ---
 
 # Phase 4 — Generics
@@ -809,12 +808,12 @@ typescript-learning-journey/
 │   ├── ...
 │   └── DAY_12.md
 │
-└── review/
-    ├── DAY_08_REVIEW.md
-    ├── DAY_09_REVIEW.md
-    ├── DAY_10_REVIEW.md
-    ├── DAY_11_REVIEW.md
-    └── DAY_12_REVIEW.md
+└── Learning Logs/
+    ├── DAY_01.md
+    ├── DAY_09.md
+    ├── DAY_10.md
+    ├── DAY_11.md
+    └── DAY_12.md
 ```
 
 `MASTER_SOURCE.md` is the authoritative learning instruction and roadmap file.
@@ -935,6 +934,6 @@ The objective is to become capable of using TypeScript confidently in real-world
 
 **Latest Topic:** Interfaces
 
-**Next Focus:** Continue Phase 2 according to the roadmap.
+**Next Focus:** Phase 3 — Advanced Types, starting with Intersection Types (`&`).
 
 **Master Source Status:** Active
